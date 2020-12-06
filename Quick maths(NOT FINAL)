@@ -1,0 +1,407 @@
+# intro
+play = input("Hello and welcome to my game. Do you wish to begin(yes/no):").lower().strip()
+if play == "yes":
+    play = input("Okay.  Quick question.... what is your name?:")
+else:
+    print("Your math skills needs improvement. Lets do some practice")
+print()
+print("Welcome " + play + ". We are going to practice decimals through multiplication and division.  "
+                          "\nThere will be three levels. You start for easy, and eventually go to hard questions."
+                          "\n 5 questions per level"
+                          "\n Answer to the best ability."
+                          "\nAnd if you really wanna improve your skills, i suggest you practice of paper, and not just rush"
+                          "\n to the calculator. This is simple, so good luck!!! ")
+score = 0
+total_q = 20
+print("Alright, lets get this bread.")
+# 1st question(Easy)
+ans = input("What is 5*2.5"
+            "\n5"
+            "\n2"
+            "\n3"
+            "\n:")
+if ans == "5":
+    print("Incorrect")
+elif ans == "2":
+    print("CORRECT")
+    score += 1
+else:
+    print("incorrect")
+print("The correct answer was actually 2")
+
+# Second question(Easy)
+ans = input("Onto the next question. What is 0.3*7"
+            "\2.1"
+            "\4.1"
+            "\n21.1"
+            "\n:")
+if ans == "2.1":
+    print("Correct")
+    score += 1
+elif ans == "4.1":
+    print("Ehhh, thats incorrect")
+else:
+    print("That is totally in correct")
+print("The correct answer was actually 2.1!!")
+# Third question(Easy)
+ans = input("What is 1.5*4?"
+            "\n6"
+            "\n9"
+            "\n420"
+            "\n:")
+if ans == "6":
+    print("CORRECT")
+    score += 1
+elif ans == "9":
+    print("ehhhhhh.  Thats a snitch number.  Incorrect")
+else:
+    print("Nice....But that special date has passed. Incorrect")
+print("The correct answer was actually 6. Onto the next question!!")
+# Fourth question(Easy)
+ans = input("Next question.  What is 3.14/1? "
+            "\n3.14"
+            "\n2.14"
+            "\n1)"
+            "\n:")
+if ans == "3.14":
+    print("CORRECT")
+    score += 1
+elif ans == "2.14":
+    print("Sorry mate, but that is incorrect")
+else:
+    print("That is definetly incorrect")
+print()
+print("The correct answer is actually 3.14. "
+      "\nTIP! Anything multiplied or divided by itself will always equal itself")
+# Fifth question.  Last question for the easy level
+ans = input("What is 7,285/10?"
+            "\n72.9"
+            "\n728.5"
+            "\n72.69" 
+            "\n:")
+if ans == "72.9":
+    print("Incorrect..")
+elif ans == "728.5":
+    print("CORRECT")
+    score += 1
+else:
+    print("Incorrect")
+    print()
+    print("The correct answer was actually 728.5")
+
+# Medium Level intro
+medium = input("You have completed the easy questions. Now its time to go up a level up."
+               "\nAre you ready(yes/no)?:")
+if medium == "yes":
+    print("Lets get this show on the road!")
+else:
+    print("You're still going. Who said you can stop?")
+# Medium question #1
+medium = input("87.2*5.0"
+               "\n436.0"
+               "\n435.0"
+               "\n429.0"
+               "\n:")
+if medium == "436.0":
+    print("CORRECT!!")
+    score += 1
+elif medium == "435.0":
+    print("Very, very close, but its incorrect.")
+else:
+    print("You're kinda close but incorrect.")
+print()
+print("The correct answer is actually 436.0"
+      "\nTIP:In multiplication, if there is a 0, forget the 0  is there"
+      "\n In this case 87.2*5.  You can just do that, and you'll still get 436.0.")
+# Medium question #2
+medium = input("What is 69.420*4?"
+               "\n278.98"
+               "\n277.68"
+               "\n276.38 :")
+if medium == "278.98":
+    print("Off but a little.")
+elif medium == "277.68":
+    print("CORRECT!")
+    score += 1
+else:
+    print("Off,but close")
+    print()
+    print("The correct answer is actually 277.68.")
+# Medium question #3
+medium = input("What is 4.76*1.56"
+               "\n7.4259"
+               "\n4.7246"
+               "\n7.4256"
+               "\n:")
+if medium == "7.4259":
+    print("Very, very close.  Off by 3. Incorrect")
+elif medium == "4.7246":
+    print("Geez, you're far off. Incorrect")
+else:
+    print("CORRECT")
+    score += 1
+    print()
+    print("The correct answer is actually 7.4256.  Onto the next question.")
+# Medium question #4
+medium = input("Next question..What is 4.24*6.2"
+               "\n 28.688"
+               "\n26.288"
+               "\n25.788"
+               "\n:")
+if medium == "28.688":
+    print("Off, Incorrect")
+elif medium == "26.288":
+    print("CORRECT")
+    score += 1
+else:
+    print("Wrong answer. That is incorrect")
+    print()
+    print("The correct answer is actually 26.288. Onto the last question.")
+# Medium question #5(Last question)
+medium = input("What is 1.82/1.3"
+               "\n1.5"
+               "\n2.4"
+               "\n1.4"
+               "\n:")
+if medium == "1.5":
+    print("Eh... Close, but incorrect")
+elif medium == "2.4":
+    print("Off, your choice is in Correct")
+else:
+    print("CORRECT")
+    score += 1
+    print()
+print("The correct answer is actually 1.4")
+# Intro the hard/advanced questions
+hard = input("Now onto the next level.  The advanced level."
+             "\n This level might require some work work, so you might want to"
+             "\nuse a calculator. Are you ready(yes/no)?:")
+if hard == "yes":
+    print("Okay....Good luck....")
+else:
+    print("You're still going regardless.")
+
+# Hard question #1
+hard = input("What is 638.92/90(Simplified)."
+             "\n7.0991"
+             "\n8.0991"
+             "\n7.10991"
+             "\n: ")
+if hard == "7.0991":
+    print("CORRECT")
+    score += 1
+elif hard == "8.0991":
+    print("Incorrect")
+else:
+    print("That is indeed. Incorrect")
+    print()
+    print("That correct answer is 7.0991(Simplified)"
+          "\n TIP:If there a number goes on such as 11111 after the decimal place"
+          "\n No need to add all those 1's. Just add 1, less work. Plus you had to simplify...")
+# Hard question #2
+hard = input("Next question.... What is 2306.2/51(Round to nearest hundreths place)"
+             "\n46.52"
+             "\n45.22"
+             "\n44.32"
+             "\n:")
+if hard == "46.52":
+    print("Incorrect")
+elif hard == "45.22":
+    print("CORRECT")
+    score += 1
+else:
+    print("EHHHH. INCORRECT!!")
+    print()
+    print("The correct answer is actually 45.22.Onto the next")
+# Hard question # 3
+hard = input("What is 33/0.4?"
+             "\n74.5"
+             "\n82.5"
+             "\n86.5"
+             "\n:")
+if hard == "74.5":
+    print("Wayyyy off. Incorrect")
+elif hard == "82.5":
+    print("CORRECT")
+    score += 1
+else:
+    print("Ehhh, you got it wrong chief :(")
+    print()
+    print("The correct answer was actualy 82.5.")
+# Hard question #4
+hard = input("What is 0.5*0.7"
+             "\n0.35"
+             "\n0.42"
+             "\n0.49"
+             "\n:?")
+if hard == "0.35":
+    print("CORRECT")
+    score += 1
+elif hard == "0.42":
+    print("ehhh, Incorrect")
+else:
+    print("HELLA INCORRECT")
+    print()
+    print("Correct answer is actually 0.35")
+# Hard question #5/Last question for hard level.
+hard = input("Last question, what is 0.8*0.5?"
+             "\n0.48"
+             "\n0.32"
+             "\n0.4"
+             "\n:")
+if hard == "0.48":
+    print("Close, but no")
+elif hard == "0.32":
+    print("Nah, incorrect")
+else:
+    print("CORRECT")
+    score += 1
+    print()
+    print("Correct answer was actually 0.4")
+#Addition/Subtraction problems
+quickmaths = input("Now we move onto the Addition and subtraction problems"
+                   "\nNo difficulty level, but just five problems i decided to throw at y'all."
+                   "\n 5 in total."
+                   "\n R U ready(yes/no")
+if quickmaths =="yes":
+    print("Lets get this bread")
+else:
+    print("TRY IT. YOU'LL LIKE IT")
+#Question #1 Addition/Subtraction
+quickmaths = input("What is 87.0-55.6?"
+                   "\n32.4"
+                   "\n31.4"
+                   "\n40.4"
+                   "\n:")
+if quickmaths == "32.4":
+    print("Off by a little...Close...But incorrect..")
+elif quickmaths == "31.4":
+    print("CORRECT")
+    score += 1
+else:
+    print("Okay that is really off")
+    print()
+    print("Correct answer is actually 31.4.")
+# Question #2 Addition/Subtraction
+quickmaths = input("What is 96.243+4.733?"
+                   "\n105.976"
+                   "\n100.976"
+                   "\n110.976"
+                   "\n:")
+if quickmaths == "105.976":
+    print("Incorrect")
+elif quickmaths == "100.976":
+    print("CORRECT!!")
+    score += 1
+else:
+    print("Better work on your addition skills.  Incorrect")
+    print()
+    print("Correct answer is actually 100.976.Onto the next")
+# Question #3 Addition/Subtraction
+quickmaths = input("What is 7.3-0.05?"
+                   "\n7.35"
+                   "\n7.15"
+                   "\n7.25"
+                   "\n:")
+if quickmaths == "7.35":
+    print("Close, but incorrect...")
+elif quickmaths == "7.15":
+    print("Ehhh, tooo low.  Incorrect")
+else:
+    print("That is indeed....CORRECT")
+    score += 1
+    print()
+    print("Correct answer is actually 7.25")
+#Question #4 Additon/subtraction
+quickmaths = input("What is 23.2+7.04?"
+                   "\n30.24"
+                   "\n35.24"
+                   "\n28.54"
+                   "\n:")
+if quickmaths == "30.24":
+    print("YOU GOT IT COORRRREECCCTTT!!")
+    score += 1
+elif quickmaths == "35.24":
+    print("That is....Incorrect....")
+else:
+    print("Definetely....Incorrect. Work on them Addition skillz")
+    print()
+    print("Correct answer is actually 30.24")
+#Question #5 Addition/Subtraction Final question
+quickmaths = input("Last question B, you got this. What is 20.41-11.51"
+                   "\n8.5"
+                   "\n8.9"
+                   "\n9.8 "
+                   "\n:")
+if quickmaths == "8.5":
+    print("Close, but nope.")
+elif quickmaths == "8.9":
+    print("That is.......Correct...")
+    score += 1
+else:
+    print("Switch the place and that was the correct answer.  Incorrect...")
+    print()
+    print("Answer was actually 8.9")
+#Bonus game
+bonus = input("Now you have completed the main course...."
+              "\nBUT....You can play my bonus round.."
+              "\nWanna play(yes/no)")
+if bonus == "no":
+    print("You got", score, "questions CORRECT")
+    grade = (score / total_q) * 100
+    print("Grade:", str(grade) + '%')
+    print("Thank you for playing my game. Whether, you got the grade you wanted or not"
+          "\nRemember, practice makes perfect!!"
+          "\nKeep on practicing, and don't lose hope!!")
+    exit()
+elif bonus == "yes":
+    print("Good luck....")
+# Bonus #1
+bonus = input("Since you accepted the challenge..first question. Which type of cars do i like more"
+              "\nJapanese cars"
+              "\nEuropean Cars"
+              "\nAmerican Cars"
+              "\n:").lower().strip()
+if bonus == "Japanese cars":
+    print("That is...CORRECT. I am indeed a JDM Fanboy.")
+elif bonus == "European Cars":
+    print("I still rock with my German and British cars, but nope!")
+else:
+    print("Ehhh, Not really. But they're fun to drive tho")
+    print()
+    print("Actually, I'm into Japanese cars wayyyy more. JDM 4 LIFE🔰🔰!")
+# Bonus #2
+bonus = input("Which is my favorite car"
+              "\nMazda RX 7"
+              "\nNissan Skyline R33"
+              "\nPorsche 911 GT2(95)"
+              "\nAll of the above")
+if bonus == "Mazda RX 7":
+    print('Without a doubt')
+if bonus == "Nissan Skyline R33":
+    print("This cars a beast.")
+elif bonus == "Porsche 911 GT2(95)":
+    print("YK im into them fine German cars.")
+else:
+    print("Honestly, i love them all.  These are all my favorite cars regardless"
+          "\nEngineering at its finest👌🏾")
+
+#bonus #3
+bonus = input("What is my nationality"
+              "\nJamacian"
+              "\nBrazillian"
+              "\nHaitian"
+              "\n:")
+if bonus == "Jamacian":
+    print("Wrong, but i rock heavy with rice n peas and Ackee and Saltfish")
+elif bonus == "Brazillian":
+    print("NOPEEEEE")
+else:
+    print("HELL YEAH. SAK PASE TO ALL MY ZOES OUT THERE🇭🇹.")
+# Result
+print("You got", score, "questions CORRECT")
+grade = (score / total_q) * 100
+print("Grade:", str(grade) + '%')
+print("Thank you for playing my game. Whether, you got the grade you wanted or not"
+          "\nRemember, practice makes perfect!!"
+          "\nKeep on practicing, and don't lose hope!!")
